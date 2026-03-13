@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.klef.fsad.exam.Course" table="course">
+
+        <id name="id" type="int" column="id">
+            <generator class="increment"/>
+        </id>
+
+        <property name="name" column="name" type="string"/>
+        <property name="description" column="description" type="string"/>
+        <property name="date" column="date" type="date"/>
+        <property name="status" column="status" type="string"/>
+        <property name="instructor" column="instructor" type="string"/>
+        <property name="duration" column="duration" type="int"/>
+        <property name="category" column="category" type="string"/>
+
+    </class>
+</hibernate-mapping>
